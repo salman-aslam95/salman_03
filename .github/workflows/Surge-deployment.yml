@@ -24,30 +24,31 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: Installing node.
+      - name: Installing nodejs.
       - uses: actions/setup-node@v2-beta
         with:
-          node-version: 14
-
+         node-version: 14
+      
       # Runs a set of commands using the runners shell
-      - name: Installing yarn.
+      - name: installing yarn.
       - uses: Borales/actions-yarn@v2.3.0
         with:
     # Yarn command
           cmd: install
           
-      - name: Creating build file.
+          
+      - name: creating build/
       - uses: Borales/actions-yarn@v2.3.0
         with:
     # Yarn command
           cmd: build
-       
+          
       - name: installing surge.
       - run: npm install -g surge
       
-      - name: deploying on surge.
-      - run: surge./build http://tense-profit.surge.sh/ --token ${{ secrets.SURGE_SALMAN03 }}
-      
-      
-      
-      
+      - mane: deploying.
+      - run: surge ./build http://tense-profit.surge.sh/ --token ${{ secrets.SURGE_SALMAN03 }}
+          
+          
+          
+          
