@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Apps from './App';
+
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
+//"ReactDOM.render" ka matlb he: reactdom yani virtual-DOM, or render ka mtlb h k is ko browser p upload kro.
+ReactDOM.render( 
   <React.StrictMode>
-    <App />
+    <Apps />   
   </React.StrictMode>,
   document.getElementById('root')
 );
