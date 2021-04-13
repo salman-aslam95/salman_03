@@ -44,4 +44,4 @@ jobs:
         run: npm install -g surge
       
       - name: deploying.
-      - run: surge ./build http://tense-profit.surge.sh/ --token ${{ secrets.SURGE_SALMAN03 }}
+        run: surge ./build http://tense-profit.surge.sh/ --token ${{ secrets.SURGE_SALMAN03 }}
