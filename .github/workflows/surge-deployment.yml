@@ -27,20 +27,18 @@ jobs:
       - name: Installing nodejs.
       - uses: actions/setup-node@v2-beta
         with:
-         node-version: 14
+          node-version: 14
       
       # Runs a set of commands using the runners shell
       - name: installing yarn.
       - uses: Borales/actions-yarn@v2.3.0
         with:
-    # Yarn command
           cmd: install
           
           
       - name: creating build/
       - uses: Borales/actions-yarn@v2.3.0
         with:
-    # Yarn command
           cmd: build
         
       - name: installing surge.
