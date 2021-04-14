@@ -3,7 +3,7 @@ import Student from "./student";
 function Apps() {
   return ( 
   <div>
-      <Student name="Salman" f_name="Aslam" num="100"/>
+      <Student name="Noman" f_name="Aslam" num="100"/>
       <hr></hr>
       <Student name="Imtiaz" f_name="Alam" num="92" />
       <hr></hr>
